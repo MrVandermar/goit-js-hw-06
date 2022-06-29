@@ -7,10 +7,14 @@ counterValue.value = 0;
 
 const decrementValue = document.querySelector('#counter button[data-action="decrement"]');
 
-const incrementValue = document.querySelector('#counter button[data-action="increment"]');
+const incrementvalue = document.querySelector('#counter button[data-action="increment"]');
 
-decrementValue.addEventListener("click", () => {counterValue.value -= 1
-counterValue.textContent = counterValue.value;});
+const hadleDecrementButtonClick = () => {counterValue.value -= 1
+counterValue.textContent = counterValue.value;};
 
-incrementValue.addEventListener("click", () => {counterValue.value += 1
-counterValue.textContent = counterValue.value;});
+const hadleIncrementButtonClick = () => {counterValue.value += 1
+    counterValue.textContent = counterValue.value;
+};
+
+decrementValue.addEventListener('click', hadleDecrementButtonClick);
+incrementvalue.addEventListener('click', hadleIncrementButtonClick);
