@@ -12,3 +12,13 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const listEl = document.querySelector(`.gallery`);
+listEl.classList.add("hw3Gallery");
+
+const createElement = img => {
+  return `<li> <img src="${img.url}" alt="${img.alt}" width = 320px/> </li>`
+};
+const markUp = images.map(createElement).join("");
+listEl.insertAdjacentHTML("beforeend", markUp);
+
