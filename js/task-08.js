@@ -10,7 +10,7 @@ function hendlyFormSubmit(event) {
     const password = formElements.password.value;
 
     if (maill === "" || password === "") {
-    return console.log("Мало буков или цыфров");
+    return alert("Мало буков или цыфров :P");
   }
 
     const formData = {

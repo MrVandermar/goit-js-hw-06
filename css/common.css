@@ -28,4 +28,9 @@ button {
   justify-content: space-between;
   list-style-type: none;
 }
-
+.border {
+ display: block;
+  border-radius: 10px;
+  padding: 10px;
+    background-color: aqua;
+}
